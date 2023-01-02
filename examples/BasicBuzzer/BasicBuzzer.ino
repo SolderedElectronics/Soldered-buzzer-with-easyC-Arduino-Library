@@ -23,13 +23,13 @@ void setup()
     buzzer.begin();
 
     // Set the buzzer volume
-    buzzer.setVolume(1);
+    buzzer.setVolume(200);
 }
 
 void loop()
 {
     // Turn on the buzzer with the preset volume
-    // It's also possible to turn on the buzzer with the buzzer.on(volume); The volume is from 0 to 255
+    // It's also possible to turn on the buzzer with the buzzer.on(volume); The volume is from 0 to 254
     buzzer.on();
     delay(100);
 
