@@ -4,7 +4,7 @@
 
 | ![Buzzer with easyC](https://upload.wikimedia.org/wikipedia/commons/8/8f/Example_image.svg) |
 | :---------------------------------------------------------------------------------------------: |
-| [Buzzer with easyC](https://www.solde.red/SKU)                                                            |
+| [Buzzer with easyC](https://www.solde.red/333186)                                                            |
 
 Buzzer with easyC compliant to [easyC ecosystem](https://www.soldered.com/en/easyC). 
 
