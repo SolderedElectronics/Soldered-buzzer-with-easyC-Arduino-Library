@@ -1,12 +1,12 @@
 /**
  **************************************************
 
-   @file        Template for attiny_firmware
-   @brief       Fill in sensor specific code.
+   @file        attiny_firmware.ino
+   @brief       Firmware for attiny404.
 
 
 
-   @authors     @ soldered.com
+   @authors     Karlo Leksic for soldered.com
  ***************************************************/
 
 #include "easyC.h"
@@ -46,8 +46,5 @@ void receiveEvent(int howMany)
 
 void requestEvent()
 {
-  int n = 5;
 
-  char a[n];
-  Wire.write(a, n);
 }
