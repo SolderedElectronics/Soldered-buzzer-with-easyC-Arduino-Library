@@ -22,7 +22,7 @@ class Buzzer : public EasyC
     Buzzer();
     void off();
     void on();
-    void on(byte _volume);    
+    void on(byte _volume);
     void setVolume(byte _volume);
 
   protected:
