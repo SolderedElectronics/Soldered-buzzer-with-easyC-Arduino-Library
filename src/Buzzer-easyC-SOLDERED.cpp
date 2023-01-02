@@ -50,8 +50,8 @@ void Buzzer::off()
 
 /**
  * @brief                   Turn the buzzer on with the volume parameter.
- * 
- * @param byte _volume      The intensity of the buzzer sound from 0 to 255.                   
+ *
+ * @param byte _volume      The intensity of the buzzer sound from 0 to 255.
  */
 void Buzzer::on(byte _volume)
 {
@@ -69,7 +69,7 @@ void Buzzer::on()
 
 /**
  * @brief                   Set buzzer volume.
- * 
+ *
  * @param byte _volume      Buzzer volume from 0 to 255.
  */
 void Buzzer::setVolume(byte _volume)
