@@ -18,19 +18,15 @@
 class Buzzer : public EasyC
 {
   public:
-    Buzzer(int _pin);
     Buzzer();
-    void off();
-    void on();
-    void on(byte _volume);
-    void setVolume(byte _volume);
+    void tone(uint16_t frequency);
+    void tone(uint16_t frequency, uint32_t duration);
+    void noTone();
 
   protected:
     void initializeNative();
 
   private:
-    int pin;
-    byte volume;
 };
 
 #endif
