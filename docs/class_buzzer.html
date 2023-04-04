@@ -96,7 +96,6 @@ $(document).ready(function(){initNavTree('class_buzzer.html',''); initResizable(
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="class_buzzer-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">Buzzer Class Reference</div></div>
 </div><!--header-->
@@ -108,24 +107,18 @@ $(document).ready(function(){initNavTree('class_buzzer.html',''); initResizable(
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3d442869d3b3156e84fc6a1814d01013"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a3d442869d3b3156e84fc6a1814d01013">Buzzer</a> (int _pin)</td></tr>
-<tr class="memdesc:a3d442869d3b3156e84fc6a1814d01013"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="class_buzzer.html">Buzzer</a> native constructor.  <br /></td></tr>
-<tr class="separator:a3d442869d3b3156e84fc6a1814d01013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8faf4fbbb7085ebdbb24d3681a727733"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a8faf4fbbb7085ebdbb24d3681a727733">Buzzer</a> ()</td></tr>
 <tr class="memdesc:a8faf4fbbb7085ebdbb24d3681a727733"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for buzzer with easyC.  <br /></td></tr>
 <tr class="separator:a8faf4fbbb7085ebdbb24d3681a727733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f80b023c04fa42185e431aca7c43d32"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a5f80b023c04fa42185e431aca7c43d32">off</a> ()</td></tr>
-<tr class="memdesc:a5f80b023c04fa42185e431aca7c43d32"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn off the buzzer.  <br /></td></tr>
-<tr class="separator:a5f80b023c04fa42185e431aca7c43d32"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f9b9beeaa9790be935708dfb4f0d87e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a9f9b9beeaa9790be935708dfb4f0d87e">on</a> ()</td></tr>
-<tr class="memdesc:a9f9b9beeaa9790be935708dfb4f0d87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn on the buzer with the preset volume.  <br /></td></tr>
-<tr class="separator:a9f9b9beeaa9790be935708dfb4f0d87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a583125a09fad65760cd5269a4def459c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a583125a09fad65760cd5269a4def459c">on</a> (byte _volume)</td></tr>
-<tr class="memdesc:a583125a09fad65760cd5269a4def459c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Turn the buzzer on with the volume parameter.  <br /></td></tr>
-<tr class="separator:a583125a09fad65760cd5269a4def459c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad747702165ff535f2d3ab04519f94431"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#ad747702165ff535f2d3ab04519f94431">setVolume</a> (byte _volume)</td></tr>
-<tr class="memdesc:ad747702165ff535f2d3ab04519f94431"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set buzzer volume.  <br /></td></tr>
-<tr class="separator:ad747702165ff535f2d3ab04519f94431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0973ce9c37801fec9ca784c504da1f45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a0973ce9c37801fec9ca784c504da1f45">tone</a> (uint16_t frequency)</td></tr>
+<tr class="memdesc:a0973ce9c37801fec9ca784c504da1f45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a square wave of the specified frequency (and 50% duty cycle)  <br /></td></tr>
+<tr class="separator:a0973ce9c37801fec9ca784c504da1f45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a953315af1da49f686042edcf4b14d922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a953315af1da49f686042edcf4b14d922">tone</a> (uint16_t frequency, uint32_t duration)</td></tr>
+<tr class="memdesc:a953315af1da49f686042edcf4b14d922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a square wave of the specified frequency (and 50% duty cycle).  <br /></td></tr>
+<tr class="separator:a953315af1da49f686042edcf4b14d922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e6f5efe5fa1699c1906d399960e4007"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a7e6f5efe5fa1699c1906d399960e4007">noTone</a> ()</td></tr>
+<tr class="memdesc:a7e6f5efe5fa1699c1906d399960e4007"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops the generation of a square wave triggered by <a class="el" href="class_buzzer.html#a0973ce9c37801fec9ca784c504da1f45" title="Generates a square wave of the specified frequency (and 50% duty cycle)">tone()</a>. Has no effect if no tone is being generated.  <br /></td></tr>
+<tr class="separator:a7e6f5efe5fa1699c1906d399960e4007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_easy_c"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_easy_c')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_easy_c.html">EasyC</a></td></tr>
 <tr class="memitem:a2ea672a225a32eab52c2b20733fd26bd inherit pub_methods_class_easy_c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_easy_c.html#a2ea672a225a32eab52c2b20733fd26bd">EasyC</a> ()</td></tr>
 <tr class="memdesc:a2ea672a225a32eab52c2b20733fd26bd inherit pub_methods_class_easy_c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main constructor for easyC version.  <br /></td></tr>
@@ -154,15 +147,8 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:a4721b7e6f2ee6cb4a9503a4ce24fb732"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#a4721b7e6f2ee6cb4a9503a4ce24fb732">initializeNative</a> ()</td></tr>
-<tr class="memdesc:a4721b7e6f2ee6cb4a9503a4ce24fb732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded function for virtual in base class to initialize <a class="el" href="class_buzzer.html">Buzzer</a> specific.  <br /></td></tr>
+<tr class="memdesc:a4721b7e6f2ee6cb4a9503a4ce24fb732"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded function for virtual in base class to initialize buzzer.  <br /></td></tr>
 <tr class="separator:a4721b7e6f2ee6cb4a9503a4ce24fb732"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
-Private Attributes</h2></td></tr>
-<tr class="memitem:aa8298a61ed8639c3105d35097abe9d8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#aa8298a61ed8639c3105d35097abe9d8a">pin</a></td></tr>
-<tr class="separator:aa8298a61ed8639c3105d35097abe9d8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac77946086c958d2088c185f9daf3bbe8"><td class="memItemLeft" align="right" valign="top">byte&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_buzzer.html#ac77946086c958d2088c185f9daf3bbe8">volume</a></td></tr>
-<tr class="separator:ac77946086c958d2088c185f9daf3bbe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -179,34 +165,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a9052ae674b3553bbb19283278299f395 inherit pub_attribs_class_easy_c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3d442869d3b3156e84fc6a1814d01013" name="a3d442869d3b3156e84fc6a1814d01013"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d442869d3b3156e84fc6a1814d01013">&#9670;&#160;</a></span>Buzzer() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Buzzer::Buzzer </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>_pin</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p><a class="el" href="class_buzzer.html">Buzzer</a> native constructor. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">int</td><td>_pin Pin on which the buzzer is connected. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a8faf4fbbb7085ebdbb24d3681a727733" name="a8faf4fbbb7085ebdbb24d3681a727733"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8faf4fbbb7085ebdbb24d3681a727733">&#9670;&#160;</a></span>Buzzer() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a8faf4fbbb7085ebdbb24d3681a727733">&#9670;&#160;</a></span>Buzzer()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -248,20 +208,20 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Overloaded function for virtual in base class to initialize <a class="el" href="class_buzzer.html">Buzzer</a> specific. </p>
+<p>Overloaded function for virtual in base class to initialize buzzer. </p>
 
 <p>Implements <a class="el" href="class_easy_c.html#a48c8aa55d48ef0cc11047cab0735c998">EasyC</a>.</p>
 
 </div>
 </div>
-<a id="a5f80b023c04fa42185e431aca7c43d32" name="a5f80b023c04fa42185e431aca7c43d32"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f80b023c04fa42185e431aca7c43d32">&#9670;&#160;</a></span>off()</h2>
+<a id="a7e6f5efe5fa1699c1906d399960e4007" name="a7e6f5efe5fa1699c1906d399960e4007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e6f5efe5fa1699c1906d399960e4007">&#9670;&#160;</a></span>noTone()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Buzzer::off </td>
+          <td class="memname">void Buzzer::noTone </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -269,123 +229,70 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Turn off the buzzer. </p>
+<p>Stops the generation of a square wave triggered by <a class="el" href="class_buzzer.html#a0973ce9c37801fec9ca784c504da1f45" title="Generates a square wave of the specified frequency (and 50% duty cycle)">tone()</a>. Has no effect if no tone is being generated. </p>
 
 </div>
 </div>
-<a id="a9f9b9beeaa9790be935708dfb4f0d87e" name="a9f9b9beeaa9790be935708dfb4f0d87e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f9b9beeaa9790be935708dfb4f0d87e">&#9670;&#160;</a></span>on() <span class="overload">[1/2]</span></h2>
+<a id="a0973ce9c37801fec9ca784c504da1f45" name="a0973ce9c37801fec9ca784c504da1f45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0973ce9c37801fec9ca784c504da1f45">&#9670;&#160;</a></span>tone() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Buzzer::on </td>
+          <td class="memname">void Buzzer::tone </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>frequency</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Turn on the buzer with the preset volume. </p>
-
-</div>
-</div>
-<a id="a583125a09fad65760cd5269a4def459c" name="a583125a09fad65760cd5269a4def459c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a583125a09fad65760cd5269a4def459c">&#9670;&#160;</a></span>on() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Buzzer::on </td>
-          <td>(</td>
-          <td class="paramtype">byte&#160;</td>
-          <td class="paramname"><em>_volume</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Turn the buzzer on with the volume parameter. </p>
+<p>Generates a square wave of the specified frequency (and 50% duty cycle) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">byte</td><td>_volume The intensity of the buzzer sound from 0 to 255. </td></tr>
+    <tr><td class="paramname">uint16_t</td><td>frequency the frequency of the tone in hertz </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="ad747702165ff535f2d3ab04519f94431" name="ad747702165ff535f2d3ab04519f94431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad747702165ff535f2d3ab04519f94431">&#9670;&#160;</a></span>setVolume()</h2>
+<a id="a953315af1da49f686042edcf4b14d922" name="a953315af1da49f686042edcf4b14d922"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a953315af1da49f686042edcf4b14d922">&#9670;&#160;</a></span>tone() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Buzzer::setVolume </td>
+          <td class="memname">void Buzzer::tone </td>
           <td>(</td>
-          <td class="paramtype">byte&#160;</td>
-          <td class="paramname"><em>_volume</em></td><td>)</td>
+          <td class="paramtype">uint16_t&#160;</td>
+          <td class="paramname"><em>frequency</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>duration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Set buzzer volume. </p>
+<p>Generates a square wave of the specified frequency (and 50% duty cycle). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">byte</td><td>_volume <a class="el" href="class_buzzer.html">Buzzer</a> volume from 0 to 255. </td></tr>
+    <tr><td class="paramname">uint16_t</td><td>frequency The frequency of the tone in hertz.</td></tr>
+    <tr><td class="paramname">uint32_t</td><td>duration The duration of the tone in milliseconds. </td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="aa8298a61ed8639c3105d35097abe9d8a" name="aa8298a61ed8639c3105d35097abe9d8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8298a61ed8639c3105d35097abe9d8a">&#9670;&#160;</a></span>pin</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Buzzer::pin</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac77946086c958d2088c185f9daf3bbe8" name="ac77946086c958d2088c185f9daf3bbe8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac77946086c958d2088c185f9daf3bbe8">&#9670;&#160;</a></span>volume</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">byte Buzzer::volume</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -401,7 +308,7 @@ Additional Inherited Members</h2></td></tr>
     <ul>
         <li class="navelem"><a class="el" href="class_buzzer.html">Buzzer</a></li>
         <li class="footer">
-            Generated on Wed Feb 15 2023 08:41:49 for Buzzer with easyC library by <a href="http://www.doxygen.org/index.html">
+            Generated on Tue Apr 4 2023 08:36:57 for Buzzer with easyC library by <a href="http://www.doxygen.org/index.html">
                 <img class="footer" src="doxygen.png" alt="doxygen"
                     onerror="this.onerror=null;this.src='doxygen.svg';" /></a> 1.9.6.
             Dark theme by <a href="http://majerle.eu" target="_new">Tilen Majerle</a>. All rights reserved.
