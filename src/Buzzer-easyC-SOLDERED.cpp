@@ -9,19 +9,9 @@
  * @authors     Karlo Leksic for soldered.com
  ***************************************************/
 
-
 #include "Buzzer-easyC-SOLDERED.h"
+#include "Arduino.h"
 
-/**
- * @brief                   Buzzer native constructor.
- *
- * @param int _pin          Pin on which the buzzer is connected.
- */
-Buzzer::Buzzer(int _pin)
-{
-    pin = _pin;
-    native = 1;
-}
 
 /**
  * @brief                   Constructor for buzzer with easyC.
@@ -32,47 +22,47 @@ Buzzer::Buzzer()
 }
 
 /**
- * @brief                   Overloaded function for virtual in base class to initialize Buzzer specific.
+ * @brief                   Overloaded function for virtual in base class to initialize buzzer.
  */
 void Buzzer::initializeNative()
 {
-    pinMode(pin, OUTPUT);
 }
 
 /**
- * @brief                   Turn off the buzzer.
- */
-void Buzzer::off()
-{
-    byte data = 0;
-    sendData(&data, 1);
-}
-
-/**
- * @brief                   Turn the buzzer on with the volume parameter.
+ * @brief                           Generates a square wave of the specified frequency (and 50% duty cycle)
  *
- * @param byte _volume      The intensity of the buzzer sound from 0 to 255.
+ * @param uint16_t frequency        the frequency of the tone in hertz
  */
-void Buzzer::on(byte _volume)
+void Buzzer::tone(uint16_t frequency)
 {
-    volume = _volume;
-    sendData(&volume, 1);
+    uint8_t *frequencyForSend = (uint8_t *)&frequency;
+    sendData(frequencyForSend, 2);
 }
 
 /**
- * @brief                   Turn on the buzer with the preset volume.
- */
-void Buzzer::on()
-{
-    sendData(&volume, 1);
-}
-
-/**
- * @brief                   Set buzzer volume.
+ * @brief                           Generates a square wave of the specified frequency (and 50% duty cycle).
  *
- * @param byte _volume      Buzzer volume from 0 to 255.
+ * @param uint16_t frequency        The frequency of the tone in hertz.
+ *
+ * @param uint32_t duration         The duration of the tone in milliseconds.
  */
-void Buzzer::setVolume(byte _volume)
+void Buzzer::tone(uint16_t frequency, uint32_t duration)
 {
-    volume = _volume;
+    uint8_t *frequencyForSend = (uint8_t *)&frequency;
+    uint8_t *durationForSend = (uint8_t *)&duration;
+
+    Wire.beginTransmission(address);
+    Wire.write(frequencyForSend, 2);
+    Wire.write(durationForSend, 4);
+    Wire.endTransmission();
+}
+
+/**
+ * @brief                           Stops the generation of a square wave triggered by tone(). Has no effect if no tone
+ *                                  is being generated.
+ */
+void Buzzer::noTone()
+{
+    byte flag = 170;
+    sendData(&flag, 1);
 }
