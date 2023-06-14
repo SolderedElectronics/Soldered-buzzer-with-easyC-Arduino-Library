@@ -26,7 +26,7 @@
 // Create a buzzer object from the library
 Buzzer buzzer;
 
-// Notes in the melody:
+// Notes in the melody (0 means a pause):
 int melody[] = {NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4};
 
 // Note durations: 4 = quarter note, 8 = eighth note, etc.:
